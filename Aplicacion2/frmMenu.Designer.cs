@@ -30,9 +30,11 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.holaMundoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.temporizadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calcuadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.holaMundoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.temporizadorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,9 +44,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
-            this.calculadoraToolStripMenuItem,
-            this.holaMundoToolStripMenuItem,
-            this.temporizadorToolStripMenuItem});
+            this.calculadoraToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 33);
@@ -53,30 +53,49 @@
             // 
             // archivoToolStripMenuItem
             // 
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.salirToolStripMenuItem.Text = "salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
             // calculadoraToolStripMenuItem
             // 
+            this.calculadoraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calcuadoraToolStripMenuItem,
+            this.holaMundoToolStripMenuItem1,
+            this.temporizadorToolStripMenuItem1});
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
-            this.calculadoraToolStripMenuItem.Text = "Calculadora";
-            this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
+            this.calculadoraToolStripMenuItem.Text = "Menu";
             // 
-            // holaMundoToolStripMenuItem
+            // calcuadoraToolStripMenuItem
             // 
-            this.holaMundoToolStripMenuItem.Name = "holaMundoToolStripMenuItem";
-            this.holaMundoToolStripMenuItem.Size = new System.Drawing.Size(128, 29);
-            this.holaMundoToolStripMenuItem.Text = "Hola mundo";
-            this.holaMundoToolStripMenuItem.Click += new System.EventHandler(this.holaMundoToolStripMenuItem_Click);
+            this.calcuadoraToolStripMenuItem.Name = "calcuadoraToolStripMenuItem";
+            this.calcuadoraToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.calcuadoraToolStripMenuItem.Text = "Calcuadora";
+            this.calcuadoraToolStripMenuItem.Click += new System.EventHandler(this.calcuadoraToolStripMenuItem_Click);
             // 
-            // temporizadorToolStripMenuItem
+            // holaMundoToolStripMenuItem1
             // 
-            this.temporizadorToolStripMenuItem.Name = "temporizadorToolStripMenuItem";
-            this.temporizadorToolStripMenuItem.Size = new System.Drawing.Size(136, 29);
-            this.temporizadorToolStripMenuItem.Text = "temporizador";
-            this.temporizadorToolStripMenuItem.Click += new System.EventHandler(this.temporizadorToolStripMenuItem_Click);
+            this.holaMundoToolStripMenuItem1.Name = "holaMundoToolStripMenuItem1";
+            this.holaMundoToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.holaMundoToolStripMenuItem1.Text = "Hola mundo";
+            this.holaMundoToolStripMenuItem1.Click += new System.EventHandler(this.holaMundoToolStripMenuItem1_Click);
+            // 
+            // temporizadorToolStripMenuItem1
+            // 
+            this.temporizadorToolStripMenuItem1.Name = "temporizadorToolStripMenuItem1";
+            this.temporizadorToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.temporizadorToolStripMenuItem1.Text = "Temporizador";
+            this.temporizadorToolStripMenuItem1.Click += new System.EventHandler(this.temporizadorToolStripMenuItem1_Click_1);
             // 
             // frmMenu
             // 
@@ -99,7 +118,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculadoraToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem holaMundoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem temporizadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calcuadoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem holaMundoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem temporizadorToolStripMenuItem1;
     }
 }

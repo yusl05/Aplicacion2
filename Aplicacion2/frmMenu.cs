@@ -14,25 +14,30 @@ namespace Aplicacion2
     {
         public frmMenu()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
-        private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void calcuadoraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form2 suma = new Form2();
-            suma.Show();  
+            suma.Show();
         }
 
-        private void holaMundoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void holaMundoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form1 hola = new Form1();
             hola.Show();
         }
 
-        private void temporizadorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void temporizadorToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             Form3 temporizador = new Form3();
-            temporizador.Show();    
+            temporizador.Show();
         }
     }
 }
